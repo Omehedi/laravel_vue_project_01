@@ -971,7 +971,7 @@ var render = function render() {
         }
       }
     }, [_c("i", {
-      staticClass: "fa fa-pencil"
+      staticClass: "fa fa-edit"
     })]), _vm._v(" "), _c("a", {
       staticClass: "btn btn-outline-danger",
       on: {
@@ -980,7 +980,7 @@ var render = function render() {
         }
       }
     }, [_c("i", {
-      staticClass: "fa fa-trash"
+      staticClass: "fa fa-trash-alt"
     })])])]);
   }), 0), _vm._v(" "), _c("form-modal", {
     on: {
@@ -1056,7 +1056,7 @@ var render = function render() {
         }
       }
     }, [_c("i", {
-      staticClass: "fa fa-pencil"
+      staticClass: "fa fa-edit"
     })]), _vm._v(" "), _c("a", {
       staticClass: "btn btn-outline-danger",
       on: {
@@ -1065,7 +1065,7 @@ var render = function render() {
         }
       }
     }, [_c("i", {
-      staticClass: "fa fa-trash"
+      staticClass: "fa fa-trash-alt"
     })])])]);
   }), 0), _vm._v(" "), _c("form-modal", {
     on: {
@@ -1106,6 +1106,7 @@ var render = function render() {
       }
     }
   }, [_c("option", {
+    staticClass: "text-muted",
     attrs: {
       value: ""
     }

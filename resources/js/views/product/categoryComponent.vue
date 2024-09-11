@@ -7,10 +7,10 @@
                 <td>{{ data.name }}</td>
                 <td>
                     <a @click="editInformation(data, data.id)" class="btn btn-outline-warning">
-                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-edit"></i>
                     </a>
                     <a @click="deleteInformation(data.id, index)" class="btn btn-outline-danger">
-                        <i class="fa fa-trash"></i>
+                        <i class="fa fa-trash-alt"></i>
                     </a>
                 </td>
             </tr>

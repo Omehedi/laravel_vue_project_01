@@ -7,10 +7,10 @@
                 <td>{{ data.name }}</td>
                 <td>
                     <a @click="editInformation(data, data.id)" class="btn btn-outline-warning">
-                        <i class="fa fa-pencil"></i>
+                        <i class="fa fa-edit"></i>
                     </a>
                     <a @click="deleteInformation(data.id, index)" class="btn btn-outline-danger">
-                        <i class="fa fa-trash"></i>
+                        <i class="fa fa-trash-alt"></i>
                     </a>
                 </td>
             </tr>
@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                     <label>Category</label>
                     <select v-validate="'required'" v-model="formData.category_id" name="name" class="form-control" type="text">
-                        <option value="">Select</option>
+                        <option class="text-muted" value="">Select</option>
                         <template v-for="(item, index) in requiredData.category">
                             <option :value="item.id">{{ item.name }}</option>
                         </template>

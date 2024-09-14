@@ -13,11 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('sub_categories', function (Blueprint $table) {
+        Schema::create('role_modules', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('category_id');
-            $table->integer('status')->default(1);
+            $table->string('module_id');
+            $table->string('role_id');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sub_categories');
+        Schema::dropIfExists('role_modules');
     }
 };

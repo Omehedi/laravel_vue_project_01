@@ -6,7 +6,7 @@
                 <td>{{ index+1 }}</td>
                 <td>{{ data.name }}</td>
                 <td>
-                    <a @click="editInformation(data, data.id)" class="btn btn-outline-warning">
+                    <a @click="editInformation(data, data.id)" class="btn btn-outline-success">
                         <i class="fa fa-edit"></i>
                     </a>
                     <a @click="deleteInformation(data.id, index)" class="btn btn-outline-danger">

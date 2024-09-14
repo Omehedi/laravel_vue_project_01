@@ -964,7 +964,7 @@ var render = function render() {
     }
   }, _vm._l(_vm.dataList, function (data, index) {
     return _c("tr", [_c("td", [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(data.name))]), _vm._v(" "), _c("td", [_c("a", {
-      staticClass: "btn btn-outline-warning",
+      staticClass: "btn btn-outline-success",
       on: {
         click: function click($event) {
           return _vm.editInformation(data, data.id);
@@ -1049,7 +1049,7 @@ var render = function render() {
     }
   }, _vm._l(_vm.dataList, function (data, index) {
     return _c("tr", [_c("td", [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(data.name))]), _vm._v(" "), _c("td", [_c("a", {
-      staticClass: "btn btn-outline-warning",
+      staticClass: "btn btn-outline-success",
       on: {
         click: function click($event) {
           return _vm.editInformation(data, data.id);

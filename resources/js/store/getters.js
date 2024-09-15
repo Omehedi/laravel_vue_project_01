@@ -13,5 +13,11 @@ export const getters = {
     },
     requiredData(state){
         return state.requiredData;
+    },
+    Config(state){
+        return state.Config;
+    },
+    permissions(state){
+        return state.permissions;
     }
 }

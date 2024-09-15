@@ -13,5 +13,11 @@ export const mutations = {
     },
     requiredData(state, data){
         state.requiredData = data;
+    },
+    Config(state, data){
+        state.Config = data;
+    },
+    permissions(state, data){
+        state.permissions = data;
     }
 }

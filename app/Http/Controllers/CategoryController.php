@@ -51,6 +51,12 @@ class CategoryController extends Controller
 
     public function update(Request $request, Category $category)
     {
+
+        if (!$this->can('category_edit')){
+            return $this->returnData(5000, null, 'You do not have permission to edit this category');
+        }
+
+
         try {
             $validator = $this->model->validate($request->all());
             if ($validator->fails()){

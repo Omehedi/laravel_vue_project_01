@@ -17,7 +17,7 @@ class SubCategoryController extends Controller
 
     public function index()
     {
-        $data =  $this->model->get();
+        $data =  SubCategory::with('category')->get();
 
         return $this->returnData(2000, $data);
     }

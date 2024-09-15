@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -11,10 +10,16 @@ class SubCategory extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'category_id'];
+
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
     public function validate($input)
     {
         return Validator::make($input, [
-            'category_id' => 'required',
+            'category_id' => 'required|exists:categories,id',
             'name' => 'required'
         ]);
     }

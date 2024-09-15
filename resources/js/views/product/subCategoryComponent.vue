@@ -5,6 +5,7 @@
             <tr v-for="(data, index) in dataList">
                 <td>{{ index+1 }}</td>
                 <td>{{ data.name }}</td>
+                <td>{{ data.category ? data.category.name : 'N/A' }}</td>
                 <td>
                     <a @click="editInformation(data, data.id)" class="btn btn-outline-success">
                         <i class="fa fa-edit"></i>
@@ -46,7 +47,7 @@ export default {
     components: {FormModal, DataTable, PageTop},
     data(){
         return {
-            tableHeading : ['Sl', 'name', 'Action'],
+            tableHeading : ['Sl', 'name', 'Category', 'Action'],
         }
     },
     mounted() {

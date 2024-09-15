@@ -22,22 +22,22 @@
                             {{$errors->has('error') ? $errors->first('error') : ''}}
                             <div class="card-body">
                                 <form action="{{url('login')}}" method="post">
-                                    {{csrf_field()}}
-                                    <!-- Email Input Field with Icon on the Right -->
-                                        <div class="form-floating mb-3 position-relative">
-                                            <input class="form-control pe-5" id="inputEmail" type="email" name="email" placeholder="Email address" required/>
-                                            <label for="inputEmail">Email address</label>
-                                            <i class="fa-solid fa-envelope position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                        </div>
+                                {{csrf_field()}}
+                                <!-- Email Input Field with Icon on the Right -->
+                                    <div class="form-floating mb-3 position-relative">
+                                        <input class="form-control pe-5" id="inputEmail" type="email" name="email" placeholder="Email address" required/>
+                                        <label for="inputEmail">Email address</label>
+                                        <i class="fa-solid fa-envelope position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                    </div>
 
-                                        <!-- Password Input Field with Icon on the Right -->
-                                        <div class="form-floating mb-3 position-relative">
-                                            <input class="form-control pe-5" id="inputPassword" type="password" name="password" placeholder="Password" required/>
-                                            <label for="inputPassword">Password</label>
-                                            <i class="fa-solid fa-lock position-absolute top-50 end-0 translate-middle-y me-3"></i>
-                                        </div>
+                                    <!-- Password Input Field with Icon on the Right -->
+                                    <div class="form-floating mb-3 position-relative">
+                                        <input class="form-control pe-5" id="inputPassword" type="password" name="password" placeholder="Password" required/>
+                                        <label for="inputPassword">Password</label>
+                                        <i class="fa-solid fa-lock position-absolute top-50 end-0 translate-middle-y me-3"></i>
+                                    </div>
 
-                                        <div class="form-check mb-3">
+                                    <div class="form-check mb-3">
                                         <input class="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
                                         <label class="form-check-label" for="inputRememberPassword">Remember Password</label>
                                     </div>

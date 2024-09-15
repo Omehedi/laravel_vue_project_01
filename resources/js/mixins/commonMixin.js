@@ -85,6 +85,12 @@ export  default {
         },
         requiredData(){
             return this.$store.getters.requiredData;
+        },
+        Config(){
+            return this.$store.getters.Config;
+        },
+        permissions(){
+            return this.$store.getters.permissions;
         }
     }
 }

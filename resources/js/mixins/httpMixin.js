@@ -48,6 +48,9 @@ export default {
                 if (parseInt(res.data.status) === 3000) {
                     return;
                 }
+                if(parseInt(res.data.status) === 4000){
+                    return;
+                }
                 if (typeof callback === 'function') {
                     callback(res.data);
                 }

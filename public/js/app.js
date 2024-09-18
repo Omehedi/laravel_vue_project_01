@@ -246,7 +246,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "categoryComponent",
   components: {
@@ -604,7 +603,7 @@ var render = function render() {
     staticClass: "nav"
   }, [_c("div", {
     staticClass: "sb-sidenav-menu-heading"
-  }, [_vm._v("Ecommerce")]), _vm._v(" "), _vm._l(_vm.Config.menus, function (menu, mIndex) {
+  }, [_vm._v("E-commerce")]), _vm._v(" "), _vm._l(_vm.Config.menus, function (menu, mIndex) {
     return [menu.sub_menus.length > 0 ? [_c("a", {
       staticClass: "nav-link collapsed",
       attrs: {
@@ -640,7 +639,26 @@ var render = function render() {
     }, [_c("i", {
       staticClass: "fas fa-tachometer-alt"
     })]), _vm._v("\n                            " + _vm._s(menu.name) + "\n                        ")])]];
-  })], 2)]), _vm._v(" "), _vm._m(2)])]);
+  }), _vm._v(" "), _vm._m(2), _vm._v(" "), _c("div", {
+    staticClass: "collapse",
+    attrs: {
+      id: "collapseLayouts2",
+      "aria-labelledby": "headingOne",
+      "data-bs-parent": "#sidenavAccordion"
+    }
+  }, [_c("nav", {
+    staticClass: "sb-sidenav-menu-nested nav"
+  }, [_c("router-link", {
+    staticClass: "nav-link",
+    attrs: {
+      to: "/admin/customer/customer"
+    }
+  }, [_vm._v("Customers")]), _vm._v(" "), _c("router-link", {
+    staticClass: "nav-link",
+    attrs: {
+      to: "/admin/customer/orders"
+    }
+  }, [_vm._v("Orders")])], 1)])], 2)]), _vm._v(" "), _vm._m(3)])]);
 };
 var staticRenderFns = [function () {
   var _vm = this,
@@ -658,6 +676,27 @@ var staticRenderFns = [function () {
   }, [_c("i", {
     staticClass: "fas fa-angle-down"
   })]);
+}, function () {
+  var _vm = this,
+    _c = _vm._self._c;
+  return _c("a", {
+    staticClass: "nav-link collapsed",
+    attrs: {
+      href: "#",
+      "data-bs-toggle": "collapse",
+      "data-bs-target": "#collapseLayouts2",
+      "aria-expanded": "false",
+      "aria-controls": "collapseLayouts2"
+    }
+  }, [_c("div", {
+    staticClass: "sb-nav-link-icon"
+  }, [_c("i", {
+    staticClass: "fas fa-columns"
+  })]), _vm._v(" "), _c("span", [_vm._v("Customer")]), _vm._v(" "), _c("div", {
+    staticClass: "sb-sidenav-collapse-arrow"
+  }, [_c("i", {
+    staticClass: "fas fa-angle-down"
+  })])]);
 }, function () {
   var _vm = this,
     _c = _vm._self._c;
@@ -694,7 +733,7 @@ var render = function render() {
     attrs: {
       href: "index.html"
     }
-  }, [_vm._v("Start Bootstrap")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
+  }, [_vm._v("Start Vue Js")]), _vm._v(" "), _vm._m(0), _vm._v(" "), _vm._m(1), _vm._v(" "), _c("div", {
     staticClass: "dropdown"
   }, [_vm._m(2), _vm._v(" "), _c("ul", {
     staticClass: "dropdown-menu dropdown-menu-end",
@@ -803,7 +842,7 @@ var render = function render() {
 var staticRenderFns = [function () {
   var _vm = this,
     _c = _vm._self._c;
-  return _c("div", [_c("h1", [_vm._v("I am from About Component")])]);
+  return _c("div", [_c("h1", [_vm._v("I am from Products Component")])]);
 }];
 render._withStripped = true;
 
@@ -938,7 +977,7 @@ var render = function render() {
     }
   }, _vm._l(_vm.dataList, function (data, index) {
     return _c("tr", [_c("td", [_vm._v(_vm._s(index + 1))]), _vm._v(" "), _c("td", [_vm._v(_vm._s(data.name))]), _vm._v(" "), _c("td", [_vm.permissions.includes("category_edit") ? _c("a", {
-      staticClass: "btn btn-outline-warning",
+      staticClass: "btn btn-outline-success",
       on: {
         click: function click($event) {
           return _vm.editInformation(data, data.id);
